@@ -1,0 +1,123 @@
+@charset "utf-8";
+
+/* -------------@ reset css------------ */
+body,h1,h2,h3,h4,h5,hr,p,blockquote,nav,header,section,footer,
+/* structural elements 结构元素 */
+dl,dt,dd,ul,ol,li,
+/* list elements 列表元素 */
+pre,
+/* text formatting elements 文本格式元素 */
+fieldset,lengend,button,input,textarea,
+/* form elements 表单元素 */
+th,td
+
+/* table elements 表格元素 */
+    {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+* {
+    /*可点击元素点触效果*/
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html,body {
+    width: 100%;
+}
+
+body {
+    /*禁用Webkit内核浏览器的文字大小调整功能*/
+    -webkit-text-size-adjust: none;
+    /*禁止长按*/
+    -webkit-touch-callout: none;
+    /*禁止复制功能，可能会导致导致输入框无法输入*/
+    -webkit-user-select: none;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    /*取消ios默认样式*/
+    -webkit-appearance: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-size: 100%
+}
+
+ul,ol {
+    list-style: none
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+img {
+    vertical-align: middle;
+    border: 0;
+}
+
+button,input,
+select,textarea {
+    vertical-align: middle !important;
+    outline: none !important;
+    border-style: none !important;
+    border-width: 0 !important;
+}
+
+input:disabled {
+    background-color: rgba(0, 0, 0, 0);
+    color: #323232;
+}
+
+textarea {
+    resize: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+ins {
+    text-decoration: none;
+}
+
+i {
+    font-style: normal;
+}
+
+/*------------------@ global HTML Element style--------------------*/
+body {
+    font-family: "PingFang Medium","PingFang SC","Source Han Sans";
+    font-size: 0.28rem;
+    font-weight: normal;
+    line-height: 1;
+    min-width: 320px;
+}
+
+html,
+body {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+@font-face {
+	font-family: 'THS';
+	src: url('//i.thsi.cn/m/fonts/THSMoneyfont-Medium.ttf');
+}
+
+.ths-font {
+	font-family: 'THS';
+}
+
+[v-cloak] {
+  display: none;
+}
