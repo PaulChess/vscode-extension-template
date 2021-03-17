@@ -1,55 +1,51 @@
 {
-	"name": "ths-ozone-template",
-	"displayName": "ths-ozone-template",
-	"description": "automatically generate ths-ozone-template",
-	"author": "shenjiaqi",
-	"publisher": "shenjiaqi",
-	"version": "1.0.0",
-	"engines": {
-		"vscode": "^1.30.0"
-	},
-	"categories": [
-		"Other",
-		"Snippets"
-	],
-	"activationEvents": [
-		"onCommand:extension.createOzoneTemplate"
-	],
-	"main": "./extension.js",
-	"contributes": {
-		"commands": [
-			{
-				"command": "extension.createOzoneTemplate",
-				"title": "create ozone template"
-			}
-		],
-		"menus": {
-			"explorer/context": [
-				{
-					"command": "extension.createOzoneTemplate",
-					"group": "navigation"
-				}
-			]
-		}
-	},
-	"scripts": {
-		"postinstall": "node ./node_modules/vscode/bin/install",
-		"test": "node ./node_modules/vscode/bin/test"
-	},
-	"devDependencies": {
-		"@types/vscode": "^1.30.0",
-		"@types/glob": "^7.1.3",
-		"@types/mocha": "^8.0.4",
-		"@types/node": "^12.11.7",
-		"eslint": "^7.19.0",
-		"glob": "^7.1.6",
-		"mocha": "^8.2.1",
-		"typescript": "^4.1.3",
-		"vscode-test": "^1.5.0"
-	},
-	"dependencies": {
-		"change-case": "^4.1.2",
-		"fs": "0.0.1-security",
-		"fs-extra": "^9.1.0"
-	}
+  "name": "ths-ozone-template",
+  "displayName": "ths-ozone-template",
+  "description": "automatically generate ths-ozone-template",
+  "author": "shenjiaqi",
+  "publisher": "shenjiaqi",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.30.0"
+  },
+  "categories": [
+    "Other",
+    "Snippets"
+  ],
+  "activationEvents": [
+    "onCommand:extension.createOzoneTemplate"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [{
+      "command": "extension.createOzoneTemplate",
+      "title": "create ozone template"
+    }],
+    "menus": {
+      "explorer/context": [{
+        "command": "extension.createOzoneTemplate",
+        "group": "navigation"
+      }]
+    }
+  },
+  "scripts": {
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "node ./node_modules/vscode/bin/test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.30.0",
+    "@types/glob": "^7.1.3",
+    "@types/mocha": "^8.0.4",
+    "@types/node": "^12.11.7",
+    "eslint": "^7.19.0",
+    "glob": "^7.1.6",
+    "mocha": "^8.2.1",
+    "typescript": "^4.1.3",
+    "vscode-test": "^1.5.0"
+  },
+  "dependencies": {
+    "change-case": "^4.1.2",
+    "fs": "0.0.1-security",
+    "fs-extra": "^9.1.0"
+  }
 }
