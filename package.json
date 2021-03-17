@@ -2,15 +2,15 @@
 	"name": "ths-ozone-template",
 	"displayName": "ths-ozone-template",
 	"description": "automatically generate ths-ozone-template",
-  "author": "shenjiaqi",
-  "publisher": "shenjiaqi",
-	"version": "0.0.1",
+	"author": "shenjiaqi",
+	"publisher": "shenjiaqi",
+	"version": "1.0.0",
 	"engines": {
 		"vscode": "^1.30.0"
 	},
 	"categories": [
 		"Other",
-    "Snippets"
+		"Snippets"
 	],
 	"activationEvents": [
 		"onCommand:extension.createOzoneTemplate"
@@ -23,18 +23,18 @@
 				"title": "create ozone template"
 			}
 		],
-    "menus": {
-      "explorer/context": [
-        {
-          "command": "extension.createOzoneTemplate",
-          "group": "navigation"
-        }
-      ]
-    }
+		"menus": {
+			"explorer/context": [
+				{
+					"command": "extension.createOzoneTemplate",
+					"group": "navigation"
+				}
+			]
+		}
 	},
 	"scripts": {
 		"postinstall": "node ./node_modules/vscode/bin/install",
-    "test": "node ./node_modules/vscode/bin/test"
+		"test": "node ./node_modules/vscode/bin/test"
 	},
 	"devDependencies": {
 		"@types/vscode": "^1.30.0",
